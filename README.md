@@ -20,7 +20,7 @@ We maintain a vector of $K$ registers (where $K=2$ for Part 1 and $K=12$ for Par
 - Register $i$ holds the "Maximum $i$-digit number found so far in the current sequence."
 - On every clock cycle, we calculate a candidate value: `(Value of Reg[i-1] * 10) + Current_Digit`.
 - We compare this candidate against the current value of `Reg[i]` and store the maximum.
-- All 12 stages update in parallel on every clock cycle.
+- All 12 stages (for part 2, 2 stages for part1) update in parallel on every clock cycle.
 
 ## Project Structure
 * `lib/`: Contains the Hardcaml logic (`part1.ml`, `part2.ml`).
@@ -37,6 +37,8 @@ We maintain a vector of $K$ registers (where $K=2$ for Part 1 and $K=12$ for Par
 ### Run the Simulation (Testbench)
 This runs the logic against the provided `day3_input.txt` and verifies the result.
 ```bash
+dune clean
+dune build
 dune exec bin/main.exe
 ```
 

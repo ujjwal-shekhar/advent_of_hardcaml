@@ -1,0 +1,12 @@
+(executable
+ (name main)
+ (public_name advent_of_hardcaml)
+ (libraries base stdio hardcaml advent_of_hardcaml.day3))
+
+(executable
+ (name gen_part1)
+ (libraries base stdio hardcaml advent_of_hardcaml.day3))
+
+(executable
+ (name gen_part2)
+ (libraries base stdio hardcaml advent_of_hardcaml.day3))

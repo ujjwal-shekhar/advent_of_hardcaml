@@ -1,0 +1,6 @@
+(library
+ (name day3)
+ (public_name advent_of_hardcaml.day3)
+ (wrapped true)
+ (libraries base hardcaml)
+ (preprocess (pps ppx_hardcaml)))

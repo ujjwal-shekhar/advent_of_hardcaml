@@ -56,5 +56,4 @@ dune exec bin/gen_part2.exe > day3_part2.v
 
 ## Resources & Acknowledgements
 * **Library:** [Hardcaml](https://github.com/janestreet/hardcaml)
-* **Challenge:** [Advent of FPGA 2025](https://blog.janestreet.com/advent-of-fpga-2025/)
 * **Input Data:** [Advent of Code](https://adventofcode.com/)
